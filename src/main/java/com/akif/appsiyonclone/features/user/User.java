@@ -17,6 +17,7 @@ public class User {
     @Id
     private String id;
     private String buildingName;
+    @Indexed(unique = true)
     private String username;
     private String password;
     private String fullName;
